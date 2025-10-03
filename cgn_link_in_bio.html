@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CGNutrition — Join</title>
+<meta name="description" content="Choose your CGNutrition membership: Essentials or Blueprint. Fast checkout via Stripe."/>
+<meta property="og:title" content="CGNutrition — Join"/>
+<meta property="og:description" content="Choose your membership and get started today."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://dummyimage.com/1200x630/ffffff/ea4c89.png&text=CGNutrition"/>
+<meta name="theme-color" content="#ea4c89"/>
+
+<style>
+  :root{
+    --cgn-pink:#ea4c89;
+    --cgn-pink-dark:#c53d72;
+    --cgn-ink:#202124;
+    --cgn-ink-soft:#5f6368;
+    --cgn-bg:#ffffff;
+    --radius:20px;
+    --shadow:0 16px 40px rgba(0,0,0,.10);
+  }
+  *{box-sizing:border-box}
+  html, body { margin:0; padding:0; background:#fff5fa; color:var(--cgn-ink); font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; }
+  .wrap{ max-width:680px; margin:0 auto; padding:28px 18px 56px; }
+  header{ text-align:center; margin-bottom:22px;}
+  .logo{
+    width:76px; height:76px; border-radius:50%;
+    background:linear-gradient(135deg, #fff, #ffe4ee);
+    display:grid; place-items:center; margin:0 auto 12px auto; box-shadow: 0 6px 18px rgba(234,76,137,.25);
+    font-weight:900; color:var(--cgn-pink);
+  }
+  h1{ margin:0 0 4px 0; font-size:clamp(22px, 4.8vw, 34px); letter-spacing:.2px; }
+  p.sub{ margin:0; color:var(--cgn-ink-soft); }
+  .card{
+    background:#fff; border:1px solid #f1e6ec; border-radius:var(--radius); box-shadow:var(--shadow);
+    padding:22px; margin:14px 0;
+  }
+  .pill { display:inline-block; background:#fff0f6; color:#ad2c5b; font-weight:700; padding:6px 10px; border-radius:999px; font-size:12px; }
+  .price{ font-size:28px; font-weight:800; margin:8px 0 12px; }
+  ul{ margin:0; padding:0 0 0 18px; color:var(--cgn-ink-soft);}
+  li{ margin:8px 0; }
+  .btn{
+    display:block; width:100%; text-align:center; text-decoration:none; font-weight:900; letter-spacing:.2px;
+    background:var(--cgn-pink); color:#fff; padding:16px 18px; border-radius:16px; margin-top:16px;
+    box-shadow:0 12px 28px rgba(234,76,137,.28); transition:transform .06s ease, background .18s ease;
+  }
+  .btn:hover{ background:var(--cgn-pink-dark); transform:translateY(-1px); }
+  .btn.secondary{ background:#fff; color:var(--cgn-pink); border:2px solid var(--cgn-pink); box-shadow:none; }
+  .cta-note{ font-size:12px; color:var(--cgn-ink-soft); text-align:center; margin-top:10px; }
+  .ribbon { font-size:12px; font-weight:800; color:#fff; background:linear-gradient(90deg,var(--cgn-pink), #ff79b2); padding:6px 10px; border-radius:999px; display:inline-block; }
+  footer{ text-align:center; color:var(--cgn-ink-soft); font-size:12px; margin-top:24px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">CGN</div>
+      <h1>Join CGNutrition</h1>
+      <p class="sub">Pick the membership that fits your season. Upgrade or cancel anytime.</p>
+    </header>
+
+    <section class="card">
+      <div class="pill">Most Flexible</div>
+      <h2 style="margin:10px 0 0 0;">Essentials</h2>
+      <div class="price">$47 / month</div>
+      <ul>
+        <li>Macros 101 — master fueling without restriction</li>
+        <li>CGNutrition community & accountability</li>
+        <li>Home & Gym progressive workouts</li>
+        <li>New monthly plan that builds on your progress</li>
+        <li>Glutes, Abs & Total Body series</li>
+        <li>Mindset reset tools + monthly meal ideas</li>
+      </ul>
+      <a class="btn"
+         href="https://buy.stripe.com/aFaeVdfbdczy3lS14e3ZK0z?utm_source=instagram&utm_medium=bio&utm_campaign=cgn_memberships"
+         target="_blank" rel="noopener">Join Essentials</a>
+      <div class="cta-note">Secure checkout on Stripe.</div>
+    </section>
+
+    <section class="card">
+      <span class="ribbon">Most Popular</span>
+      <h2 style="margin:10px 0 0 0;">Blueprint</h2>
+      <div class="price">$127 / month</div>
+      <ul>
+        <li>Everything in <strong>Essentials</strong></li>
+        <li>Done‑For‑You <strong>Custom Macros</strong> w/ monthly adjustments</li>
+        <li>Nutrition Blueprint: fat loss ➝ strength</li>
+        <li>Bi‑weekly Zoom group coaching</li>
+        <li>Monthly accountability check‑ins</li>
+        <li>Optional <strong>Custom 4‑Week Meal Plan</strong> (recipes + shopping lists)</li>
+      </ul>
+      <a class="btn"
+         href="https://buy.stripe.com/7sY7sL7ILgPOg8E00a3ZK0A?utm_source=instagram&utm_medium=bio&utm_campaign=cgn_memberships"
+         target="_blank" rel="noopener">Join Blueprint</a>
+
+      <!-- Optional upgrade / add-on -->
+      <a class="btn secondary"
+         href="https://buy.stripe.com/eVq6oHfbd2YY6y44gq3ZK0B?utm_source=instagram&utm_medium=bio&utm_campaign=cgn_memberships"
+         target="_blank" rel="noopener">Add Custom 4‑Week Meal Plan</a>
+      <div class="cta-note">Bonus: Sign up by <em>October 31</em> — first 4‑week meal plan FREE.</div>
+    </section>
+
+    <footer>
+      © CGNutrition. Need help? DM @cgnutrition on Instagram.
+    </footer>
+  </div>
+</body>
+</html>
